@@ -16,7 +16,7 @@ exports.verificaToken = function(req, res, next) {
                 errors: err
             });
         }
-        req.usuario = decoded.usuario; // En cualquier lugar donde se verifiqueToken, se tendrá informaicón del usuiario en el request
+        req.usuario = decoded.usuario; // En cualquier lugar donde se verifiqueToken, se tendrá información del usuiario en el request
         next(); //Este next es para que continue ejecutando las siguientes instrucciones hacaia abajo
     });
 }
